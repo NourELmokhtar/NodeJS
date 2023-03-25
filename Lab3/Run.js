@@ -25,11 +25,11 @@ http.createServer(function (req, res) {
         res.writeHead(200, { 'content-type': "text/html" })
         res.write("Login Sucess")
     }
-    else if (req.url === '/register' && req.method === 'GET') {
+    else if (req.url === '/SignUp' && req.method === 'GET') {
         res.writeHead(201, { 'content-type': "text/html" })
         res.write(SignUp)
     }
-    else if (req.url === '/register' && req.method === 'POST') {
+    else if (req.url === '/SignUp' && req.method === 'POST') {
         res.writeHead(201, { 'content-type': "text/html" })
         res.write("Register Sucess")
     }
